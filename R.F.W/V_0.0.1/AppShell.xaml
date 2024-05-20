@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="V_0._0._1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:V_0._0._1"
+    Shell.FlyoutBehavior="Disabled"
+    Title="V_0._0._1">
+
+    <TabBar>
+        <Tab Title="메모">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab Title="냉장고">
+            <ShellContent ContentTemplate="{DataTemplate local:Note}" />
+        </Tab>
+        <Tab Title="오늘의식단">
+            <ShellContent ContentTemplate="{DataTemplate local:To_Diet}" />
+        </Tab>
+    </TabBar>
+    
+
+</Shell>
